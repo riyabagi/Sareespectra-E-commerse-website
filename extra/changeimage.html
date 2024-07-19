@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-3">
+        </div>            <img width="100%" height="450px" id="bannerImage" src="assets/images/cart1.jpeg">
+
+    </div>
+    <button onclick="changeImage('assets/images/e1.jpeg')"> <img width="50px" height="100px" src="assets/images/e1.jpeg" alt=""></button>
+    <button onclick="changeImage('assets/images/e2.jpeg')">Image 2</button>
+    <button onclick="changeImage('assets/images/e3.jpeg')">Image 3</button>
+    <button onclick="changeImage('assets/images/e4.jpeg')">Image 4</button>
+
+    <script>
+        function changeImage(fileName) {
+            let img = document.querySelector("#bannerImage");
+            img.setAttribute('src', fileName);
+        }
+    </script>
+</body>
+
+</html>
